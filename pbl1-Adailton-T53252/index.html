@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/form.css">
+<title>Dieta</title>
+</head>
+<body>
+<div class="container">
+	<div class="row">
+    <div class="col-md-6">
+		<div class="form_main">
+                <h2 class="heading">Cadastro de Dieta - Horário: <span id='hora' style='color:red'>06:00</span></h2>
+                <div class="form" id="divInputs">
+                <form action='tabela.html' method='post' id='form' onsubmit="return validaCampos('alimento','porcao');">
+                    <div class="form-group">
+                    <label for="idnome">Nome</label>
+    <input type="text" class="txt form-control" id="idnome" placeholder="Digite o Nome"><span id='hora' style='color:red'></span>
+                    </div>
+                      <div class="form-group">
+             <label for="alimento1">Alimento 1:</label>
+    <input type="text" class="txt form-control alimento" id="alimento1" placeholder="Alimento 1"><span id='hora' style='color:red'></span>
+                      </div>
+                      <div class="form-group">
+    <label for="porcao1">Porção 1:</label>
+    <input type="text" class="txt form-control porcao" id="porcao1" placeholder="Porção 1"><span id='hora' style='color:red'></span>
+                      </div>
+      <div class="form-group">
+        <label for="alimento2">Alimento 2:</label>
+    <input type="text" class="txt form-control alimento" id="alimento2" placeholder="Alimento 2"><span id='hora' style='color:red'></span>
+      </div>
+        <div class="form-group">
+    <label for="porcao2">Porção 2:</label>
+    <input type="text" class="txt form-control porcao" id="porcao2" placeholder="Porção 2"><span id='hora' style='color:red'></span>
+      </div>
+      <div class="form-group">
+        <label for="alimento3">Alimento 3:</label>
+    <input type="text" class="txt form-control alimento" id="alimento3" placeholder="Alimento 3"><span id='hora' style='color:red'></span>
+      </div>
+        <label for="porcao3">Porção 3:</label>
+    <input type="text" class="txt form-control porcao" id="porcao3" placeholder="Porção 3"><span id='hora' style='color:red'></span><br>
+                   <button type="button" onclick="salvarPorcao('alimento','porcao');" class="btn btn-secondary">Salvar</button>  <input type="submit" value="Gerar Dieta" name="submit" class="btn btn-primary">
+                </form>
+            </div>
+            </div>
+    </div>
+	</div>
+</div>
+    <script type='text/javascript' src='js/registro.js'></script>
+    <script type='text/javascript' src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script type='text/javascript' src="js/bootstrap.min.js"></script>
+</body>
+</html>
